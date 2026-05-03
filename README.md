@@ -24,16 +24,6 @@ Juego clásico de Buscaminas implementado con HTML, CSS y JavaScript puro. Es un
 
 La aplicación es una página estática que mantiene el estado del juego en memoria en un único objeto JavaScript. La UI se compone de una cuadrícula de botones (celdas) generada dinámicamente.
 
-Mermaid (diagrama simple):
-
-```mermaid
-graph LR
-  UI[HTML/CSS] --> Controller[script.js (lógica)]
-  Controller --> Board[matriz de celdas]
-  Controller --> Timer[temporizador]
-  Controller -.-> Storage[(localStorage) (opcional)]
-```
-
 **Estructura del proyecto**
 
 - [Ejercicio2/index.html](Ejercicio2/index.html) : Página principal del juego.
