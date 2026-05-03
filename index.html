@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Juego de Buscaminas</h1>
+
+        <form id="game-form" class="game-form">
+            <div class="form-group">
+                <label for="board-size">Tamano del tablero</label>
+                <input type="number" id="board-size" min="4" max="20" value="8">
+            </div>
+
+            <div class="form-group">
+                <label for="mine-count">Cantidad de minas</label>
+                <input type="number" id="mine-count" min="1" value="10">
+            </div>
+
+            <button type="submit">Crear tablero</button>
+        </form>
+
+        <p class="help-text">Clic izquierdo para abrir una celda. Clic derecho para poner o quitar una bandera.</p>
+
+        <section class="game-panel">
+            <p id="game-time">Tiempo: 00:00:00</p>
+            <p id="game-message">Configura el tablero y empieza una partida.</p>
+        </section>
+
+        <section id="board" class="board" aria-label="Tablero de Buscaminas"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
